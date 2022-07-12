@@ -7,7 +7,7 @@ Feature: PeruRail
     And selecciono el tipo de cabina "<tipo_cabina>" u la cantidad de canibas "<cant_cabinas>"
     And ingresamos la informacion de los pasajeros
     | nombre | apellido | fecha_cumpleanio  | nacionalidad | tipo_documento       | nro_documento | sexo | tefefono | email          |
-    | Doris   | Arraiza | 05-01-1989        | Peru          | Identification Card | 45633761      | Male | 980643987 | test@gmail.com|
+    | DORIS   | ARRAIZA | 31-12-1988        | Peru          | Identification Card | 45633761      | Male | 980643987 | test@gmail.com|
     When doy click en continuar en la pagina de pasajeros
     Then se mostrara la pantalla de pago "PAYMENT METHOD"
     And elegimos como "<metodo_pago>" e ingresamos el "<nro_tarjeta>", "<mes_expiracion>", "<anio_expiracion>", "<codigo_seguridad>" y "<nombre>"

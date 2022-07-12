@@ -32,7 +32,7 @@ public class DataPage extends PageObject {
             $("//input[@placeholder='Document number']").type(lista.get(i).get("nro_documento"));
             // otra forma de hacer dropDown
             selectFromDropdown($("//select[contains(@name,'sel_sex')]"), lista.get(i).get("sexo"));
-            $("//input[@placeholder='Telephone']").type(lista.get(i).get("telefono"));
+            $("//input[@placeholder='Telephone']").type(lista.get(i).get("tefefono"));
             $("//input[@placeholder='E-mail']").type(lista.get(i).get("email"));
             $("//input[@placeholder='Confirm your email']").type(lista.get(i).get("email"));
             Serenity.takeScreenshot(); // tomar foto
