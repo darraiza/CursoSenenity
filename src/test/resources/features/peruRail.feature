@@ -13,4 +13,4 @@ Feature: PeruRail
     And elegimos como "<metodo_pago>" e ingresamos el "<nro_tarjeta>", "<mes_expiracion>", "<anio_expiracion>", "<codigo_seguridad>" y "<nombre>"
     Examples:
       | destino | ruta       | tren                           | mesAnioSalida | diaSalida   | tipo_cabina  | cant_cabinas  | metodo_pago| nro_tarjeta      | mes_expiracion  | anio_expiracion | codigo_seguridad  | nombre |
-      | Cusco   |Puno > Cusco|Andean Explorer, A Belmond Train| September 2022| 28          | SUITE        | 1 CABIN       | visa       | 2212345678901234 | 12              | 25              | 123               | Doris  |
+      | Cusco   |Puno > Cusco|Andean Explorer, A Belmond Train| September 2022| 28          | SUITE        | 1 CABIN       | visa       | 4242424242424242 | 12              | 25              | 123               | Doris  |
