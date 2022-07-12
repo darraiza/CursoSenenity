@@ -38,7 +38,7 @@ public class MetodoDePagoPage extends PageObject {
 
     public String obtenerTituloPago(){
         //GENERAL
-        withTimeoutOf(7, ChronoUnit.SECONDS); // SE IMPORTA SECONDS DE CRONOUNIT // puedes reemplazarlo por treSleep
+        withTimeoutOf(15, ChronoUnit.SECONDS); // SE IMPORTA SECONDS DE CRONOUNIT // puedes reemplazarlo por treSleep
          // POR COMPONENTE
         waitForTextToAppear(tituloPago.getText());
         return tituloPago.getText();
@@ -48,6 +48,11 @@ public class MetodoDePagoPage extends PageObject {
         element("//input[@id='" +metodo_pago+"']").waitUntilClickable().click();
         Serenity.takeScreenshot();
 
+    }
+
+    public void clickTerminos() {
+        rdbtnTerminos.click();
+        Serenity.takeScreenshot();
     }
 
     public void ingresarDatosTarjeta(String nro_tajerta, String mes_expiracion, String anio_expiracion, String codigo_seguridad, String nombre) {
@@ -63,7 +68,4 @@ public class MetodoDePagoPage extends PageObject {
         Serenity.takeScreenshot();
     }
 
-    public void clickTerminos() {
-
-    }
 }
