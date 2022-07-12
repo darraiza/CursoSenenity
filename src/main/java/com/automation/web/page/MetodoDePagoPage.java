@@ -53,6 +53,7 @@ public class MetodoDePagoPage extends PageObject {
     public void ingresarDatosTarjeta(String nro_tajerta, String mes_expiracion, String anio_expiracion, String codigo_seguridad, String nombre) {
         btnIngresarTarjeta.waitUntilClickable().click();
         waitForRenderedElementsToBePresent(By.xpath("//div[@class='datos-tarjeta']"));
+
         getDriver().switchTo().frame("global");
         txtNroTarjeta.type(nro_tajerta);
         dropdownMesExp.selectByVisibleText(mes_expiracion);
