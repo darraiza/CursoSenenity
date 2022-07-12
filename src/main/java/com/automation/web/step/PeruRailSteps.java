@@ -28,6 +28,7 @@ public class PeruRailSteps {
     @And("selecciona la fecha de salida {string} y {string}")
     public void seleccionaLaFechaDeSalidaY(String mesAnioSalida, String diaSalida) {
         calendarioPage.seleccionarSalida(mesAnioSalida,diaSalida);
+        homePage.clickBuscar();
     }
 
     @And("selecciono el tipo de cabina {string} u la cantidad de canibas {string}")
@@ -42,7 +43,7 @@ public class PeruRailSteps {
     }
 
     @When("doy click en continuar en la pagina de pasajeros")
-    public void doyClickEnContinuarEnLaPaginaDePasajeros( DataTable dataTable) {
+    public void doyClickEnContinuarEnLaPaginaDePasajeros() {
         dataPage.clickContinuar();
     }
 
@@ -53,6 +54,8 @@ public class PeruRailSteps {
 
     @And("elegimos como {string} e ingresamos el {string}, {string}, {string}, {string} y {string}")
     public void elegimosComoEIngresamosElY(String metodo_pago, String nro_tarjeta, String mes_expiracion, String anio_expiracion, String codigo_seguridad, String nombre) {
-
+        metodoDePagoPage.clickMetodoPago(metodo_pago);
+        metodoDePagoPage.clickTerminos();
+        metodoDePagoPage.ingresarDatosTarjeta(nro_tarjeta,mes_expiracion, anio_expiracion,codigo_seguridad,nombre);
     }
 }

@@ -44,7 +44,7 @@ public class MetodoDePagoPage extends PageObject {
         return tituloPago.getText();
     }
 
-    public void clickMetodoPago( String metodo_pago){
+    public void clickMetodoPago(String metodo_pago){
         element("//input[@id='" +metodo_pago+"']").waitUntilClickable().click();
         Serenity.takeScreenshot();
 
@@ -62,4 +62,7 @@ public class MetodoDePagoPage extends PageObject {
         Serenity.takeScreenshot();
     }
 
+    public void clickTerminos() {
+
+    }
 }
