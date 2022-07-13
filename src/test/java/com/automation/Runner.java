@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"pretty"}
         ,features = "src/test/resources/features"
         ,glue = "com.automation.web.step"
-        ,tags = "@Cabinas"
+        //,tags = "@Cabinas"
         //,tags = "@PeruRail"
 )
 public class Runner {}
